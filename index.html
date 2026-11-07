@@ -3,202 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StecX | Análisis y Diseño de Sistemas</title>
-    
-    <!-- Bootstrap 5 (CDN) -->
+    <title>StecX | Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Fuente de Google Fonts (Poppins es muy legible y moderna) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tus estilos personalizados -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <!-- NAVEGACIÓN (Pega el navbar de arriba aquí) -->
+    <!-- ... -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div class="container">
-            <!-- Aquí va tu logo. Asegúrate de tener la imagen en la carpeta -->
-            <a class="navbar-brand" href="#">
-                <img src="images/logo-stecx.png" alt="StecX Logo" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-semibold">
-                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#marco-teorico">Marco Teórico</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Análisis Estructurado</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Orientado a Objetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Vídeos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo-stecx.png" alt="StecX Logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fw-semibold">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="marco-teorico.html">Marco Teórico</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Análisis Estructurado</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Orientado a Objetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Vídeos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 2. SECCIÓN DE INICIO (HERO) -->
-    <section id="inicio" class="hero-section d-flex align-items-center">
+    <!-- SECCIÓN HERO (BIENVENIDA) -->
+    <section class="hero-section d-flex align-items-center">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center text-lg-start">
                     <h1 class="display-4 fw-bold text-dark mb-3">Sistema de Gestión de Repuestos y Mantenimiento</h1>
                     <p class="lead text-muted mb-4">Optimizando el control de inventario y la trazabilidad de equipos de ofimática para StecX.</p>
-                    <a href="#marco-teorico" class="btn btn-primary btn-lg px-4 py-2" style="background-color: #0d2159; border: none;">Leer Marco Teórico</a>
+                    <a href="marco-teorico.html" class="btn btn-primary btn-lg px-4 py-2" style="background-color: #0d2159; border: none;">Leer Marco Teórico</a>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0 text-center">
-                    <!-- Aquí va tu banner -->
                     <img src="images/banner.png" alt="Ensamblaje General de Dispositivos" class="img-fluid rounded shadow-sm">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. SECCIÓN DEL MARCO TEÓRICO -->
-    <section id="marco-teorico" class="py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <!-- Título Principal -->
-                    <h2 class="display-5 fw-bold text-center mb-5" style="color: #0d2159;">Marco Teórico</h2>
-                    
-                    <!-- 1. Introducción -->
-                    <div class="mb-5">
-                        <h3 class="h4 fw-semibold mb-3 text-secondary">1. Introducción</h3>
-                        <p class="text-justify lh-lg text-dark">
-                            El presente proyecto corresponde al análisis inicial del sistema de gestión para <strong>StecX</strong>, una empresa dedicada al mantenimiento, reparación y venta de equipos de ofimática. El trabajo se orienta a identificar la situación actual del negocio, sus principales dificultades administrativas —con especial énfasis en el control de almacén de repuestos— y las necesidades que deben considerarse para el diseño de una solución informática organizada, útil y comprensible para los usuarios finales (técnicos y administradores).
-                        </p>
-                        <p class="text-justify lh-lg text-dark">
-                            La información de base fue tomada del relevamiento de los procesos actuales de StecX, donde se describen las dinámicas de atención a municipios, registro de reparaciones por código único de equipo, control descentralizado de inventario y gestión de repuestos. A partir de esa información se desarrolla la primera parte del proyecto, enfocada en las generalidades, el problema, los objetivos, el alcance, la metodología y el marco teórico necesario para sustentar el análisis del sistema.
-                        </p>
-                    </div>
-
-                    <!-- 2. Antecedentes -->
-                    <div class="mb-5">
-                        <h3 class="h4 fw-semibold mb-3 text-secondary">2. Antecedentes</h3>
-                        <p class="text-justify lh-lg text-dark">
-                            StecX nació como una iniciativa familiar/emprendimiento de colegas inspirada en la experiencia de trabajo en la empresa MACROCOLOR, la cual brindaba servicios técnicos a municipios. Tomando como base ese modelo de negocio, StecX se estableció para ofrecer servicios de mantenimiento y reparación de equipos de ofimática a entidades municipales, operando principalmente en la ciudad de La Paz, Bolivia, y realizando envíos o viajes a la ciudad de Beni para ventas específicas. El enfoque del negocio se centra en la atención a áreas específicas dentro de los municipios (salud, financiera, despacho del alcalde, etc.).
-                        </p>
-                    </div>
-
-                    <!-- 3. Planteamiento del Problema -->
-                    <div class="mb-5">
-                        <h3 class="h4 fw-semibold mb-3 text-secondary">3. Planteamiento del Problema</h3>
-                        <p class="text-justify lh-lg text-dark">
-                            StecX presenta dificultades administrativas y operativas debido a que el control de inventario de repuestos se realiza de forma manual, dispersa y descentralizada. Los repuestos se encuentran distribuidos en múltiples ubicaciones físicas (Tienda 1, Tienda 2 y domicilios de los socios), y su seguimiento se basa en anotaciones en Excel o en la revisión de facturas de venta pasadas. Esto provoca que, al momento de requerir un repuesto para una reparación (por ejemplo, una RAM o un reset para una impresora Epson L3310), los técnicos no tengan certeza de su disponibilidad real o de su ubicación exacta. Si el repuesto no está a la mano, las reparaciones se retrasan un mínimo de tres días. Además, el registro de equipos depende de códigos únicos por municipio, lo que hace vital un sistema centralizado para rastrear el historial de cada equipo.
-                        </p>
-                    </div>
-
-                    <!-- 4. Árbol de Problemas (Placeholder) -->
-                    <div class="mb-5 text-center">
-                        <h3 class="h4 fw-semibold mb-3 text-secondary">4. Árbol de Problemas</h3>
-                        <div class="p-5 bg-white border rounded shadow-sm d-flex align-items-center justify-content-center" style="min-height: 250px;">
-                            <p class="text-muted m-0"><em>[Aquí se insertará la imagen del Árbol de Problemas]</em></p>
-                        </div>
-                    </div>
-
-                    <!-- 5. Formulación del Problema -->
-                    <div class="mb-5">
-                        <h3 class="h4 fw-semibold mb-3 text-secondary">5. Formulación del Problema</h3>
-                        <p class="text-justify lh-lg text-dark fst-italic border-start border-4 ps-3" style="border-color: #3ca6db !important;">
-                            ¿De qué manera el análisis y diseño de un sistema de gestión puede mejorar el control y ubicación de repuestos, el registro de reparaciones por equipo y la generación de reportes de inventario en StecX?
-                        </p>
-                    </div>
-
-                    <!-- 6. Propósito del Estudio -->
-                    <div class="mb-5">
-                        <h3 class="h4 fw-semibold mb-3 text-secondary">6. Propósito del Estudio</h3>
-                        <p class="text-dark fw-bold mb-2">Objetivo general:</p>
-                        <p class="text-justify lh-lg text-dark">Analizar y diseñar un sistema de gestión para StecX que permita organizar el control de inventario de repuestos, el registro de equipos y la gestión de reparaciones, aplicando los fundamentos del análisis y diseño de sistemas.</p>
-                        
-                        <p class="text-dark fw-bold mb-2">Objetivos específicos:</p>
-                        <ul class="lh-lg text-dark">
-                            <li>Identificar los procesos actuales de control de repuestos y atención a municipios de StecX.</li>
-                            <li>Determinar las principales dificultades del registro manual y la dispersión física del inventario.</li>
-                            <li>Definir los requerimientos iniciales del sistema según las necesidades operativas.</li>
-                            <li>Establecer el alcance funcional del proyecto (enfocado en repuestos y equipos).</li>
-                            <li>Proponer una base teórica que sustente el desarrollo del sistema de gestión.</li>
-                        </ul>
-                    </div>
-
-                    <!-- 7. Metodología -->
-                    <div class="mb-5">
-                        <h3 class="h4 fw-semibold mb-3 text-secondary">7. Metodología</h3>
-                        <p class="text-justify lh-lg text-dark">
-                            El método utilizado corresponde a un enfoque descriptivo y aplicado. Es descriptivo porque organiza y detalla las características de los procesos actuales de StecX. Es aplicado porque busca orientar el diseño de un sistema informático que resuelva problemáticas reales de la empresa, permitiendo la generación de reportes operativos.
-                        </p>
-                    </div>
-
-                    <!-- 8. Planificación de Actividades (Placeholder) -->
-                    <div class="mb-5 text-center">
-                        <h3 class="h4 fw-semibold mb-3 text-secondary">8. Planificación de Actividades</h3>
-                        <h4 class="h5 fw-normal text-muted mb-3">8.1 Diagrama de Gantt</h4>
-                        <div class="p-5 bg-white border rounded shadow-sm d-flex align-items-center justify-content-center" style="min-height: 250px;">
-                            <p class="text-muted m-0"><em>[Aquí se insertará la imagen del Diagrama de Gantt]</em></p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-        <!-- 4. SECCIÓN DE CONTACTOS / INTEGRANTES -->
-    <section id="contactos" class="py-5 bg-white">
-        <div class="container">
-            <h2 class="display-5 fw-bold text-center mb-5" style="color: #0d2159;">Integrantes del Grupo</h2>
-            <div class="row justify-content-center text-center g-4">
-                
-                <!-- Integrante 1 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 border rounded shadow-sm h-100">
-                        <h5 class="fw-bold mb-2 text-dark">Joel Jesus<br>Machicado Colque</h5>
-                        <p class="text-muted mb-0">Desarrollador / Analista</p>
-                    </div>
-                </div>
-                
-                <!-- Integrante 2 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 border rounded shadow-sm h-100">
-                        <h5 class="fw-bold mb-2 text-dark">Alvaron Cristian<br>Melean Humerez</h5>
-                        <p class="text-muted mb-0">Desarrollador / Analista</p>
-                    </div>
-                </div>
-                
-                <!-- Integrante 3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 border rounded shadow-sm h-100">
-                        <h5 class="fw-bold mb-2 text-dark">Ivan<br>Torrez Mayta</h5>
-                        <p class="text-muted mb-0">Desarrollador / Analista</p>
-                    </div>
-                </div>
-                
-                <!-- Integrante 4 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 border rounded shadow-sm h-100">
-                        <h5 class="fw-bold mb-2 text-dark">Jhoselin Katerin<br>Suxo Arcaya</h5>
-                        <p class="text-muted mb-0">Desarrollador / Analista</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- 5. PIE DE PÁGINA -->
+    <!-- PIE DE PÁGINA -->
     <footer class="text-center py-4 text-white" style="background-color: #0d2159;">
         <div class="container">
             <p class="mb-0">Copyright © 2026 StecX. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
